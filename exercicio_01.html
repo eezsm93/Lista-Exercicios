@@ -1,0 +1,50 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <div>
+            <h1>Digite dois numeros</h1>
+            <input type="text" id="n1" placeholder="Digite o Primeiro Numero">
+            <input type="text" id="n2" placeholder="Digite o Segundo Numero"><br>
+            <input type="submit" value="Calcular Media" id="btn">
+        </div>
+    </body>
+
+
+
+    <script>
+
+
+
+        function calcMedia(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            var media = (n1 + n2) / 2
+        
+            if(isNaN(n1) || isNaN(n2)){
+                alert("Digite Apenas numeros");
+            }
+                
+            
+            else{
+                alert(media);
+            }
+        }
+
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            calcMedia();
+        });
+
+    </script>
+</html>
