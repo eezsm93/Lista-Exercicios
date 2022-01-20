@@ -1,0 +1,43 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+
+    <input type="text" name="itens" id="item" />
+    <br>
+    <button id="add-item">Novo item</button>
+
+    <ul id="lista-itens">        
+    </ul>
+
+    </body>
+
+
+
+    <script>
+
+        let inputItem = document.getElementById("item");
+        let btnAddItem = document.getElementById("add-item");
+        let ulItens = document.getElementById("lista-itens");
+
+        btnAddItem.addEventListener("click", () => {
+            let newInputItem = inputItem.value;
+
+            
+            var item = document.createElement("li")
+            item.appendChild(document.createTextNode(newInputItem));
+            ulItens.appendChild(item);
+        })
+
+    </script>
+</html>

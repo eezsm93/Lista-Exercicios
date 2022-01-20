@@ -1,0 +1,67 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <div>
+            <h1>Digite dois numeros</h1>
+            <input type="text" id="n1" placeholder="Digite o Primeiro Numero"><br>
+            <input type="text" id="n2" placeholder="Digite o Segundo Numero"><br>
+            <input type="text" id="n3" placeholder="Digite o Terceiro Numero"><br>
+            <input type="text" id="n4" placeholder="Digite o Quarto Numero"><br>
+            <input type="text" id="n5" placeholder="Digite o Quinto Numero"><br>
+        
+            
+            <br>
+            <input type="submit" value="Quadrado" id="btn">
+        </div>
+
+
+
+    </body>
+
+
+
+    <script>
+
+
+
+        function square(n1, n2, n3, n4, n5){
+            
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4 = parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            var squareN1 = n1*n1;
+            var squareN2 = n2*n2;
+            var squareN3 = n3*n3;
+            var squareN4 = n4*n4;
+            var squareN5 = n5*n5;
+
+            alert(squareN1);
+            alert(squareN2);
+            alert(squareN3);
+            alert(squareN4);
+            alert(squareN5);
+        }
+
+        btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            square();
+        })
+
+
+
+    </script>
+</html>
