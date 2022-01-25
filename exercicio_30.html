@@ -1,0 +1,40 @@
+
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+
+      
+        
+    </style>
+
+    <body>
+        <div id="container">
+            <input type="text" name="" id="txt">
+            <button type="button" onclick="verify()">Verficar</button>
+    
+        </div>
+    </body>
+
+
+
+    <script>
+
+        function verify(){
+        let inputTxt = document.getElementById("txt").value;
+        if(inputTxt.includes("assim")){
+        alert("A palavra assim foi detectada")
+        }else{
+            alert("a palavra assim NAO foi detectada");
+        }
+    }
+
+        
+    </script>
+</html>

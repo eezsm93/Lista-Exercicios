@@ -1,0 +1,72 @@
+
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+
+      
+        
+    </style>
+
+    <body>
+        <div id="resultado">
+            
+        </div>
+    </body>
+
+
+
+    <script>
+
+        
+        var indice = 10;
+        var divResult = document.getElementById("resultado");
+       
+
+        function writeCont(){
+        for(let i = 0; i < indice; i++){
+            divResult.innerHTML += `
+        <div>
+            <h3>${i + 1}</h3>
+            <hr>
+        </div>`
+        }
+    }
+
+    function writeContPares(){
+        for(let i = 0; i < indice; i++){
+            if(i %2 !== 0){
+            divResult.innerHTML += `
+        <div>
+            <h3>${i + 1}</h3>
+            <hr>
+        </div>`
+        }
+    }
+ }
+
+
+
+
+
+
+
+
+    writeCont();
+    writeContPares();
+        
+
+        
+
+     
+                
+        
+    </script>
+
+</html>

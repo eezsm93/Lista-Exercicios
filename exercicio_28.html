@@ -1,0 +1,85 @@
+
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+
+      
+        
+    </style>
+
+    <body>
+        <div id="resultado">
+            
+        </div>
+    </body>
+
+
+
+    <script>
+
+        var indice = 20;
+        var indice2 = 5;
+        var indice3 = 10
+        let divResult = document.getElementById("resultado")
+        divResult.innerHTML = `
+        
+        // <div>
+        //     <h3>Resultado</h3>
+        // </div>`
+
+        divResult.innerHTML += `
+        <div>
+            <h3>Resultado</h3>
+        </div>
+        <div>
+            <h3>Resultado</h3>
+        </div>`
+
+
+        for(var i = 0; i < indice; i++){
+        divResult.innerHTML += `
+        <div>
+            <h3>Resultado</h3>
+        </div>`
+    }
+        var resultado = new Array ("Resultado1, Resultado2, Resultado3, Resultado4, Resultado5")
+        resultado.forEach(function(txt){
+            divResult.innerHTML += `
+        <div>
+            <h3>${txt}<br></h3>
+        </div>`
+        })
+
+
+
+       while(i < indice2){
+        divResult.innerHTML += `
+        <div>
+            <h3>Resultado</h3>
+        </div>`
+        i++;
+       }
+
+       let x = 0;
+       do{
+       
+        divResult.innerHTML += `
+        <div>
+            <h3>Resultado</h3>
+        </div>`
+        x++;
+       }while(x < indice3);
+        
+     
+                
+        
+    </script>
+
+</html>
