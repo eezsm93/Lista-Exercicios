@@ -1,0 +1,52 @@
+
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+
+
+        
+        .box{
+            background-color: tomato;
+            max-width: 200px;
+            height: 200px;
+            margin: 25px;
+            color: white;
+            text-align: center;
+        }
+
+      
+        
+    </style>
+
+    <body>
+
+        <div id="container" class="box">    
+            
+        </div>
+      
+    </body>
+
+
+
+    <script>
+        
+        var indice = 6;
+        var divContainer = document.getElementById("container")
+        for(let i = 0; i < indice; i++){
+            divContainer.innerHTML += 
+            `<div class="box" onclick='alert("Voce clicou na caixa: ${i + 1}")'>
+                <p>CAIXA${i + 1}</p>
+            </div>`
+        }
+
+        
+        
+    </script>
+</html>
