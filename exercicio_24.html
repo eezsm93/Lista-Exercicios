@@ -1,4 +1,4 @@
-<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário.
+Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário.
 
 <html>
 
@@ -16,8 +16,8 @@
     <body>
         <div id="container">
            
-            <button  style="background-color:" id="btnGreen" class="btn" onclick="changeColorToGreen()" value="green">Verde</button>
-            <button  style="background-color:" id="btnRed" class="btn" onclick="changeColorToGreen()" value="red">Vermelhor</button>
+            <button  id="btnGreen" class="btn" onclick="changeColorToGreen()" value="green">Verde</button>
+            <button  id="btnRed" class="btn" onclick="changeColorToRed()" value="red">Vermelhor</button>
 
         </div>
     </body>
@@ -26,23 +26,19 @@
 
     <script>
         
-        takeColor();
+        function changeColorToGreen(){
+            var btnGreen = document.getElementById("btnGreen");
+            var btnRed = document.getElementById("btnRed");
+            let value = btnGreen.value;
+            btnGreen.style.backgroundColor = value;
+            btnRed.style.backgroundColor = value;
 
-        takeColor();
-
-            function takeColor(){
-            let btnGreen = document.getElementById("btnGreen")
-            let btnRed = document.getElementById("btnRed")
         }
-
-      
-
-            function changeColorToGreen(){
-            let divContainer = document.getElementById("container")
-            btnGreen.innerHTML =  `"style="background-color: ${btnGreen.value}"`
-            btnRed.text.replace(`"style="background-color: ${btnGreen.value}"`)
-            
-            }
+        function changeColorToRed(){
+            let value = btnRed.value;
+            btnGreen.style.backgroundColor = value;
+            btnRed.style.backgroundColor = value;
+        }
 
         
 
@@ -50,4 +46,4 @@
           
            
     </script>
-</html> -->
+</html>
