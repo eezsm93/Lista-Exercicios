@@ -1,0 +1,43 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+
+        <div>
+      
+
+    </body>
+
+
+
+    <script>
+
+        let monthNames = ["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+        const today2 = new Date();
+        document.write("O mes atual e: " + monthNames[today2.getMonth()] + "<br>");
+
+        var today = new Date();
+        var day = String(today.getDate()).padStart(2, '0');
+        var month = String(today.getMonth() + 1).padStart(2, '0');
+        var year = today.getFullYear();
+        var nextMonth = String(today.getMonth() + 2).padStart(2, '0');
+
+        today = day + '/' + month + '/' + year;
+        document.write(today + "<br>");
+        document.write("Proximo mes: " + monthNames[today2.getMonth()+1])
+            
+
+    </script>
+</html>

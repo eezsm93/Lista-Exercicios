@@ -1,0 +1,32 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <div id="container">
+            <input type="text" id="name" placeholder="Nome">
+            <input type="text" id="lastName" placeholder="Sobrenome">
+            <button onclick="hello()">Boas Vindas</button>
+        </div>
+    </body>
+
+
+
+    <script>
+            function hello(){
+                var name = document.getElementById("name").value;
+                var lastName = document.getElementById("lastName").value;
+                alert("Ola " + name + " " + " " + lastName);
+            }
+           
+    </script>
+</html>

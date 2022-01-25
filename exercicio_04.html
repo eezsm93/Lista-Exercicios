@@ -1,0 +1,42 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <div>
+            <h1>digite 5 idades separadas por virgula</h1>
+            <strong>Idades: </strong><input type="text" id="txtIdades">
+            <input type="button" value="Verficar" onclick="verificarIdades()">
+        </div>
+    </body>
+
+
+
+    <script>
+
+        function verificarIdades(){
+            var idades = document.getElementById("txtIdades").value;
+            idades = idades.split(",");
+            var maior = 0;
+            var menor = 0;
+            for(i=0;i<idades.length;i++){
+            if(parseInt(idades[i]) >=18){
+                maior++;
+            }else{
+                menor++;
+            }
+        }
+            document.write("Maiores: "+maior+" - Menores: "+menor);
+    }
+
+    </script>
+</html>

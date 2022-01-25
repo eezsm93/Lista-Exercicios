@@ -1,0 +1,44 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+
+      
+        
+    </style>
+
+    <body>
+        <div id="container">
+           
+            <input id="numbers" type="number"> 
+            <button onclick="writeCont()" value="txt">Contar</button>
+
+        </div>
+    </body>
+
+
+
+    <script>
+
+        function writeCont(){
+    
+        var divContainer = document.getElementById("container")
+        var indice = parseInt(document.getElementById("numbers").value);
+        for(let i = 0; i < indice; i++){
+            document.write(i+1 + "<br>");
+        }
+        
+        
+    }
+
+
+          
+           
+    </script>
+</html>

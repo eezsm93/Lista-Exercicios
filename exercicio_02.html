@@ -22,7 +22,7 @@
         
             
             <br>
-            <input type="submit" value="Quadrado" id="btn">
+            <input type="submit" value="Quadrado" id="btn" onclick="square()">
         </div>
 
 
@@ -35,7 +35,7 @@
 
 
 
-        function square(n1, n2, n3, n4, n5){
+        function square(){
             
             var n1 = parseFloat(document.getElementById("n1").value);
             var n2 = parseFloat(document.getElementById("n2").value);
@@ -55,11 +55,6 @@
             alert(squareN4);
             alert(squareN5);
         }
-
-        btn = document.getElementById("btn");
-        btn.addEventListener("click", function(){
-            square();
-        })
 
 
 

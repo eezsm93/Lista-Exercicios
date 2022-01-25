@@ -1,0 +1,32 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <div>
+            Data<input type="text" id="txtData">
+            <input type="button" value="Exibir" onclick="verificarData()">
+        </div>
+    </body>
+
+
+
+    <script>
+            function verificarData(){
+                var data = document.getElementById("txtData").value;
+                data = data.split("/");
+                document.write("Dia: " +data[0]+ "<br>");
+                document.write("Mês: " +data[1]+ "<br>");
+                document.write("Ano: " +data[2]+ "<br>");
+            }
+    </script>
+</html>

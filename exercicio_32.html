@@ -1,0 +1,43 @@
+<!-- Insira uma caixa de texto na tela que permita somente números. Baseado no valor digitado, calcule a média das notas digitadas pelo usuário. -->
+
+<html>
+
+
+    <head>
+
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+
+        <div>
+        <h1>Tente adivinhar um numero de 1 a 10</h1>
+          <input type="number" id="number">  
+          <button type="submit" onclick= number()>Adivinhar</button>
+        </div>
+
+    </body>
+
+
+
+    <script>
+
+
+        function number() {
+            var numberInput = document.getElementById("number").value;
+            var number = 7;
+            if(numberInput == number){
+                alert("Parabens voce acertou");
+            }else{
+                alert("Errou, Tente outro numero")
+            }
+
+        }
+
+            
+
+    </script>
+</html>
